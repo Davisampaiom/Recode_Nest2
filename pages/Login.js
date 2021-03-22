@@ -1,5 +1,6 @@
 import Header from "../src/Components/Header";
 import styled from "styled-components";
+import Grid from "@material-ui/core/Grid";
 
 const Page = styled.div`
   display: flex;
@@ -68,11 +69,14 @@ border-radius: 8px;
 
 export default function Login() {
   return (
-    <div>
-      <Header />
-      <Page>
+  
+ <div>
+      <Header /> 
+      <Page
+         >
+   
      <Form>
-     <h3>Login</h3>
+     <h2>Login</h2>
         <Input placeholder="  Usuario" id='usuario' name='usuario' type='text' />
         <Input placeholder="  Senha" id='senha' name='senha' type='password' />
         <Button type="submit"> <a href="Cria_alertas">Login</a></Button>
@@ -80,6 +84,7 @@ export default function Login() {
 
      </Form>
       </Page>
-    </div>
+ </div>
+    
   );
 }
